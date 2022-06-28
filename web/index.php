@@ -3,19 +3,19 @@
 
     //イベントによって変更する6箇所 + ZoomURL + DataBaseのURI5つ
     $title =  "組織部学術研修会"; //あまり長くなると折り返すので注意！　52行目に代入
-    $kaisaibi="2022-04-23T17:00:00";  //開催終了後（時間）に受付を停止　244行目に代入
-    $limit=   "2022-04-21T23:59:59";  //会場の締切日の指定 締切日の24時に締め切る　235行目に代入
+    $kaisaibi="2022-08-20T17:00:00";  //開催終了後（時間）に受付を停止　244行目に代入
+    $limit=   "2022-08-20T16:59:59";  //会場の締切日の指定 締切日の24時に締め切る　235行目に代入
     $k_teiin ="12";                   //会場の定員　95行目に代入
     $w_teiin ="80";                   //Webの定員　91行目に代入
-    $Tanto_Address = "konishi@daihougi.ne.jp"; //開催担当責任者のメルアド　または　ML
+    $Tanto_Address = "hima71f@yahoo.co.jp"; //開催担当責任者のメルアド　または　ML
     //Zoom URL
     $zoom  = "https://us02web.zoom.us/meeting/register/tZ0oc-murDwuE9Dd6hEI1affPdZKXafWD1A9";
     //Heroku- AppName- Resources- Herok Postgres- Setting- Database Credentials から
-    $Host     = "ec2-34-230-198-12.compute-1.amazonaws.com"; 
-    $Database = "d32nf8a6j7747f";
-    $User     = "kbqvnqamqwzqlb";
+    $Host     = "ec2-44-197-128-108.compute-1.amazonaws.com"; 
+    $Database = "d1f9ddmk6lr4ld";
+    $User     = "itmzvmpvxmkdte";
     $Port     = "5432";
-    $Password = "fdbf13dc595b6a64698932988de9a757b833b09399b6b8c0285a5751ff4711e8";
+    $Password = "804e9686b3250a23c2d2a7f84f7bb0f1191222419e7d671535b7c6a2bb0a6a4d";
     //以上計12か所イベントごとに要変更
     $limit2 =date('n月j日',  strtotime($limit)); 
     $conn = "host=".$Host." "."port=".$Port." "."dbname=".$Database." "."user=".$User." "."password=".$Password;
