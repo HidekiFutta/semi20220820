@@ -29,9 +29,8 @@
     //if(!empty($_POST["email_1"]) ){ echo $_POST["email_1"]; }
     //トークンをセッションに格納
     session_start();
-    $_SESSION["input_token"] = $token; //グローバル変数らしい  
-    
-    $_SESSION["title"] = $title; 
+    $_SESSION["input_token"] = $token; //グローバル変数らしい    
+    $_SESSION["title"] = $title;
     $_SESSION["Tanto_Address"] = $Tanto_Address;
     $_SESSION["zoom"] = $zoom;
     $_SESSION["conncon"] = $conn;
@@ -55,8 +54,7 @@
     </head>
     <body>
         <div class="contact">
-            <h1 class="contact-ttl" id="edit_area2"><?php echo $title?> 登録フォーム</h1>
-         
+            <h1 class="contact-ttl" id="edit_area2"><?php echo $title?>登録フォーム</h1>       
             <form method="post" action="./check.php">
                 <table class="contact-table">
                     <tr>
@@ -92,7 +90,7 @@
                             </label>
                             <label class="contact-skill">
                                 <input type="radio" id="kaijyo" name="keitai" value="会場参加" <?php if( !empty($_POST['keitai']) && $_POST['keitai'] === "会場参加" ){ echo 'checked'; } ?>/>
-                                <span class="contact-skill-txt" id="edit_area">会場参加　会員限定 先着<?php echo $k_teiin?>名（締切<?php echo $limit2?>）</span>
+                                <span class="contact-skill-txt" id="edit_area">会場参加　会員のみ 先着<?php echo $k_teiin?>名（締切<?php echo $limit2?>）</span>
                             </label>                     
                         </td>                                          
                         </td>
@@ -237,7 +235,7 @@
               var end   = endObj.getTime();
               var comment = "";
               if(end <= today){// 有効期限の範囲外
-                  comment= "<font color='red'>会場参加　締め切りました（締切<?php echo $limit2 ?>)</font>";
+                  comment= "<font color='red'>会場参加は締め切りました（締切<?php echo $limit2 ?>)</font>";
                   document.getElementById("edit_area").innerHTML = comment;
                   document.getElementById("kaijyo").disabled = true;  //締切後押せなくする
               }
