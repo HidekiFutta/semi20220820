@@ -61,7 +61,7 @@
     <br>　　パスコード: soshiki820
     <br>
     <br>・Zoomについて、必ず以下を参照してください
-    <br>　　<a href='$ZoomURL'>Zoomのご案内</a>";}
+    <br>　　<a href='https://zoom-info.herokuapp.com/'>Zoomのご案内</a>";}
   else{
     $announce ="・COVID-19の感染状況によりWebのみになった場合は、ご連絡いたします。";
   }
