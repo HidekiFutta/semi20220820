@@ -56,8 +56,12 @@
   if( $keitai =="Web参加"){
     $announce ="<font color='red'>・Web参加の方は次のボタンから参加してください。</font>
     <br>　　こちらから　⇒　<a href='$ZoomURL'>ミーティングに参加</a>
+    <br>
     <br>　　ミーティングID: 873 5062 7184
-    <br>　　パスコード: soshiki820";}
+    <br>　　パスコード: soshiki820
+    <br>
+    <br>・Zoomについて、必ず以下を参照してください
+    <br>　　<a href='$ZoomURL'>Zoomのご案内</a>";}
   else{
     $announce ="・COVID-19の感染状況によりWebのみになった場合は、ご連絡いたします。";
   }
