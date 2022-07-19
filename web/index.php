@@ -9,7 +9,7 @@
     $w_teiin ="80";                   //Webの定員　91行目に代入
     $Tanto_Address = "hima71f@yahoo.co.jp"; //開催担当責任者のメルアド　または　ML
     //Zoom URL
-    $zoom  = "https://us02web.zoom.us/meeting/register/tZ0oc-murDwuE9Dd6hEI1affPdZKXafWD1A9";
+    $zoom  = "https://us02web.zoom.us/j/87350627184?pwd=aDE6pjzthMEEGh60dGK4eK83je3Fa8.1";
     //Heroku- AppName- Resources- Herok Postgres- Setting- Database Credentials から
     $Host     = "ec2-44-197-128-108.compute-1.amazonaws.com"; 
     $Database = "d1f9ddmk6lr4ld";
@@ -90,7 +90,7 @@
                             </label>
                             <label class="contact-skill">
                                 <input type="radio" id="kaijyo" name="keitai" value="会場参加" <?php if( !empty($_POST['keitai']) && $_POST['keitai'] === "会場参加" ){ echo 'checked'; } ?>/>
-                                <span class="contact-skill-txt" id="edit_area">会場参加　会員のみ 先着<?php echo $k_teiin?>名（締切<?php echo $limit2?>）</span>
+                                <span class="contact-skill-txt" id="edit_area">会場参加　会員限定 先着<?php echo $k_teiin?>名（締切<?php echo $limit2?>）</span>
                             </label>                     
                         </td>                                          
                         </td>

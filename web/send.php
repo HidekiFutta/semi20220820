@@ -54,7 +54,10 @@
   
   //Web参加と会場参加で案内文を切り分ける：ヒアドキュメント内に表示する文面
   if( $keitai =="Web参加"){
-    $announce ="・Web参加の方は次のボタンを押してZoomに登録してください。<br>　　 こちら　⇒　<a href='$ZoomURL'>Zoom登録";}
+    $announce ="・Web参加の方は次のボタンから参加してください。
+    <br>　Zoomミーティングに参加する　⇒　<a href='$ZoomURL'>
+    <br>　ミーティングID: 873 5062 7184
+    <br>　パスコード: soshiki820";}
   else{
     $announce ="・COVID-19の感染状況によりWebのみになった場合は、ご連絡いたします。";
   }
@@ -249,7 +252,7 @@ $isSend = true;
 								
 								お問い合わせ先<br>
 								<br>
-								　　(公社)大阪府診療放射線技師会　IT推進委員会<br>
+								　　(公社)大阪府診療放射線技師会<br>
 								　　 　Mail：itdrive@daihougi.ne.jp </a><br>
 								<br>
 								<br>
