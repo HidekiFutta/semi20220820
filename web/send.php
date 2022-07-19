@@ -60,7 +60,7 @@
     <br>　　ミーティングID: 873 5062 7184
     <br>　　パスコード: soshiki820
     <br>
-    <br>・Zoomについて、必ず以下を参照してください
+    <br>・<font color='blue'>Zoomについて、必ず以下を参照してください。</font>
     <br>　　<a href='https://zoom-info.herokuapp.com/'>Zoomのご案内</a>";}
   else{
     $announce ="・COVID-19の感染状況によりWebのみになった場合は、ご連絡いたします。";
