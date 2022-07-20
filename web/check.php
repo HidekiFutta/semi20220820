@@ -62,7 +62,7 @@
   pg_set_client_encoding("sjis");
     
   $result = pg_query('SELECT id, count, web FROM sanka');
-  echo $result;
+  echo pg_last_error();
   if (!$result) {
       die('クエリーが失敗しました。'.pg_last_error());
   } 
