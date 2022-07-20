@@ -67,8 +67,8 @@
   } 
   for ($i = 0 ; $i < pg_num_rows($result) ; $i++){
       $rows = pg_fetch_array($result, NULL, PGSQL_ASSOC);
-  //    print('id='.$rows['id']);
-  //   print(',count='.$rows['count'].'<br>');
+  print('id='.$rows['id']);
+  print(',count='.$rows['count'].'<br>');
   }
 
   if ($text_value4=="会場参加"){
@@ -78,7 +78,7 @@
     $a = $rows['web'];
   }
 
-  //echo $a;
+  echo $a;
   //https://tokkan.net/php/pos.html
   //pg_query($link, "UPDATE sanka SET count= $a WHERE id = '1'");   
   $close_flag = pg_close($link);
