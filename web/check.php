@@ -62,7 +62,7 @@
   pg_set_client_encoding("sjis");
     
   $result = pg_query('SELECT id, count, web FROM sanka');
-  echo $result;
+  
   if (!$result) {
       die('クエリーが失敗しました。'.pg_last_error());
   } 
@@ -79,7 +79,7 @@
     $a = $rows['web'];
   }
 
-  echo $a;
+  echo $text_value4;
   echo "OKOKOK";
   //https://tokkan.net/php/pos.html
   //pg_query($link, "UPDATE sanka SET count= $a WHERE id = '1'");   
