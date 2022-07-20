@@ -5,7 +5,7 @@
   
   if(!$_POST){
     header('Location: ./index.php');
-    echo "unok1";
+    echo "un_ok1";
   }
   
   //タイムスタンプ
@@ -62,14 +62,14 @@
   pg_set_client_encoding("sjis");
     
   $result = pg_query('SELECT id, count, web FROM sanka');
-  
+  echo $result;
   if (!$result) {
       die('クエリーが失敗しました。'.pg_last_error());
   } 
   for ($i = 0 ; $i < pg_num_rows($result) ; $i++){
       $rows = pg_fetch_array($result, NULL, PGSQL_ASSOC);
-  print('id='.$rows['id']);
-  print(',count='.$rows['count'].'<br>');
+ // print('id='.$rows['id']);
+ // print(',count='.$rows['count'].'<br>');
   }
 
   if ($text_value4=="会場参加"){
