@@ -60,7 +60,7 @@
     <br>　　ミーティングID: 873 5062 7184
     <br>　　パスコード: soshiki820
     <br>
-    <br>・<font color='green'>Zoomについて、必ず以下を参照してください。</font>
+    <br>・<font color='lime'>Zoomについて、必ず以下を参照してください。</font>
     <br>　　ご確認ください　⇒　<a href='https://zoom-info.herokuapp.com/'>Zoomのご案内</a>";}
   else{
     $announce ="・COVID-19の感染状況によりWebのみになった場合は、ご連絡いたします。";
@@ -154,7 +154,7 @@ $email = new \SendGrid\Mail\Mail();
   $email->setFrom("itdrive@daihougi.ne.jp", "大放技");
   $email->setSubject("大放技イベント受付");
   $email->addTo("hima71f@yahoo.co.jp", "User");
-  //$email->addTo($E_Address, "User"); //担当者のアドレス
+  $email->addTo($E_Address, "User"); //担当者のアドレス
   $email->addContent("text/plain", $messageAdmin);
   $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
   try {

@@ -7,7 +7,7 @@
     $limit=   "2022-08-17T16:59:59";  //会場の締切日の指定 締切日の24時に締め切る　235行目に代入
     $k_teiin ="12";                   //会場の定員　95行目に代入
     $w_teiin ="80";                   //Webの定員　91行目に代入
-    $Tanto_Address = "hima71f@yahoo.co.jp"; //開催担当責任者のメルアド　または　ML
+    $Tanto_Address = "hyo.tttty@gmail.com"; //開催担当責任者のメルアド　または　ML
     //Zoom URL
     $zoom  = "https://us02web.zoom.us/j/87350627184?pwd=aDE6pjzthMEEGh60dGK4eK83je3Fa8.1";
     //Heroku- AppName- Resources- Herok Postgres- Setting- Database Credentials から
@@ -37,8 +37,8 @@
     //$_SESSION["kaisaibi"] = $kaisaibi;
     //$_SESSION["limit"] = $limit;
     //$_SESSION["simekiri"] = $simekiri;
-    //$_SESSION["k_teiin"] = $k_teiin;
-    //$_SESSION["w_teiin"] = $w_teiin;
+    $_SESSION["k_teiin"] = $k_teiin;
+    $_SESSION["w_teiin"] = $w_teiin;
   ?>
    
  <!DOCTYPE html>  
